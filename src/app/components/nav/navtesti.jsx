@@ -1,13 +1,13 @@
 "use client";
 
+import Link from "next/link";
+import { useEffect, useState } from "react";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
-
 export default function Navigation() {
-  
   return (
     <div className="">
-      <nav className="navbar navbar-light  fixed-top">
+      <nav className="navbar navbar-light fixed-top">
         <div className="container-fluid">
           <button
             className="navbar-toggler ms-auto"
@@ -16,7 +16,7 @@ export default function Navigation() {
             data-bs-target="#offcanvasNavbar"
             aria-controls="offcanvasNavbar"
           >
-            <span  className="navbar-toggler-icon fs-2"></span>
+            <span className="navbar-toggler-icon fs-2"></span>
           </button>
           <div
             className="offcanvas offcanvas-end"
@@ -35,24 +35,24 @@ export default function Navigation() {
             <div className="offcanvas-body">
               <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="#koti">
+                  <Link className="nav-link active" href="/">
                     Koti
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#projektit">
+                  <Link className="nav-link" href="/projekti">
                     Projektit
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" aria-current="page" href="#mina">
+                  <Link className="nav-link" href="/mina">
                     Minä
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" aria-current="page" href="#yhteys">
+                  <Link className="nav-link" href="/contact">
                     Ota yhteyttä
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

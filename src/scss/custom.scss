@@ -1,0 +1,18 @@
+@import "/node_modules/bootstrap/scss/functions";
+@import "/node_modules/bootstrap/scss/variables";
+
+$custom-colors: (
+ "custom-yellow": rgb(251, 255, 0),
+ "custom-blue": #1a1a1b
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors );
+
+@mixin gradient-background($direction, $colors...) {
+    background: linear-gradient($direction, $colors);
+  }
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28251, 255, 0, 1.0%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+}
+
+  @import "/node_modules/bootstrap/scss/bootstrap";

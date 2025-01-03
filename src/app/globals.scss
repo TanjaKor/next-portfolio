@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&family=Yanone+Kaffeesatz:wght@200..700&display=swap');
+@import '../scss/custom.scss';
+
+html {height:100%;}
+
+body {height:100%;}
+
+a.icon-hover i:hover {
+  color: rgb(153, 155, 20) !important;
+}
+
+a:hover {
+  color: rgb(153, 155, 20) !important;
+}
+
+.btn-custom-yellow {
+  background-color: rgb(251, 255, 0) !important; 
+  color: #000; 
+  }
+
+.btn-custom-yellow:hover {
+  background-color: rgb(153, 155, 20) !important; 
+  color: #000 !important;
+  transition: background-color 0.3s ease;
+}
+
+.hero-bg {
+  @include gradient-background(to right, rgb(251, 255, 0), #1a1a1b); 
+  position: relative; 
+  height: 100vh; 
+  background-size: cover;
+  background-position: center;
+}
+
+.card {
+  transition: all 0.4s;
+}
+
+.card:hover {
+  transform: scale(1.10);
+}
+
+.yanone-kaffeesatz-yanone {
+  font-family: "Yanone Kaffeesatz", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.life-savers-bold {
+  font-family: "Life Savers", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.life-savers-extrabold {
+  font-family: "Life Savers", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.syne-mono-regular {
+  font-family: "Syne Mono", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+
+.relative-pos{
+  position: relative;
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+}
+
+.custom-shape-divider-bottom-1735892460 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1735892460 svg {
+  position: relative;
+  display: block;
+  width: calc(204% + 1.3px);
+  height: 242px;
+}
+
+.custom-shape-divider-bottom-1735892460 .shape-fill {
+  fill: #1a1a1b;
+}
+
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
+  .custom-shape-divider-bottom-1735892460 svg {
+      width: calc(300% + 1.3px);
+      height: 198px;
+  }
+}

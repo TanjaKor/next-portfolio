@@ -1,4 +1,9 @@
+
+
 /** @type {import('next').NextConfig} */
-const nextConfig = {};
+const nextConfig = {
+  sassOptions: {
+  },
+};
 
 export default nextConfig;

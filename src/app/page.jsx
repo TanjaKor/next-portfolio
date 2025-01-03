@@ -3,35 +3,45 @@ import Koti from "./components/Koti/page";
 import Navigaatio from "./components/nav/nav";
 import Projektit from "./components/Projektit/page";
 import Minä from "./components/Minä/page";
+import Yhteys from "./components/Yhteys/page";
 
 export default function Home() {
   
   return (
-    <div className="items-center justify-items-center gap-16 text-lg">
-      <header className=" w-full px-20 py-10">
+    <div className="items-center justify-items-center ">
+      <header >
         <Navigaatio />
       </header>
-      <main className="flex flex-col row-start-2 text-center items-center sm:items-start">
+      <main className=" flex flex-col text-center items-center sm:items-start">
         <Koti/>
         <Projektit/>
         <Minä/>
+        <Yhteys/>
       </main>
-      <footer className="bg-blue-950 row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
+      
+      <footer className="flex flex-row text-center items-center sm:items-start">
+      <div className="fs-2">
+            <a
+            className="m-3 icon-hover"
+            href="mailto:tmkorolainen@gmail.com"
+            target="_blank"
+            >
+              <i className="bi bi-envelope-open text-custom-yellow"></i>
+            </a>
+						
+						<a
+            className="m-3 icon-hover"
+							href="https://www.linkedin.com/in/tanjakorolainen/"
+							target="_blank"
+						>
+							<i className="bi bi-linkedin text-custom-yellow"></i> 
+            </a>
+						
+						<a 
+            className="m-3 icon-hover" href="https://github.com/TanjaKor" target="_blank">
+            <i className="bi bi-github text-custom-yellow "></i>
+            </a>
+					</div>
       </footer>
     </div>
   );
