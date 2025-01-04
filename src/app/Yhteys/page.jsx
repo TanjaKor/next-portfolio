@@ -1,6 +1,27 @@
 "use client";
 
 export default function Yhteys() {
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const formData = {
+      nimi: event.target.nimi.value,
+      viesti: event.target.viesti.value,
+      sposti: event.target.sposti.value,
+      puhelin: event.target.puhelin.value,
+      yritys: event.target.yritys.value,
+    };
+
+    const response = await fetch('/api/contact', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    });
+
+    const result = await response.json();
+    console.log(result); // Handle response (success or error message)
+  };
   return (
     <div id="yhteys" className="mx-5 px-5">
       <h1 className="display-2">Ota yhteyttä</h1>
@@ -12,14 +33,14 @@ export default function Yhteys() {
           tmkorolainen @ gmail.com
         </a>
       </p>
-      <form className="mb-5">
+      <form onSubmit={handleSubmit} className="mb-5">
         <div className="row mx-5 mt-5 mb-4">
           <div className="col-md-4">
             <label htmlFor="nimi">Nimesi</label>
             <input
               type="text"
               className="form-control"
-              id="nimi"
+              name="nimi"
               placeholder="Kirjoita nimesi"
             />
           </div>
@@ -28,7 +49,7 @@ export default function Yhteys() {
             <input
               type="text"
               className="form-control"
-              id="yritys"
+              name="yritys"
               placeholder="Yrityksesi"
             />
           </div>
@@ -37,7 +58,7 @@ export default function Yhteys() {
             <input
               type="text"
               className="form-control"
-              id="sposti"
+              name="sposti"
               placeholder="Sposti"
             />
           </div>
@@ -48,7 +69,7 @@ export default function Yhteys() {
             <input
               type="text"
               className="form-control"
-              id="puhelin"
+              name="puhelin"
               placeholder="Kirjoita puhelinnumerosi"
             />
           </div>
@@ -57,7 +78,7 @@ export default function Yhteys() {
             <textarea
               type="text"
               className="form-control"
-              id="viesti"
+              name="viesti"
               placeholder="viesti"
             />
           </div>
