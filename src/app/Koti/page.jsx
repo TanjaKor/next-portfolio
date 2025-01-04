@@ -19,7 +19,7 @@ export default function Koti() {
             aria-valuemin="0"
             aria-valuemax="100"
           >
-            <div className="progress-bar progress-bar-striped progress-bar-animated bg-custom-blue" style={{ width: "50%" }}></div>
+            <div className="progress-bar progress-bar-striped progress-bar-animated bg-custom-blue mb-4 mb-md-0" style={{ width: "50%" }}></div>
           </div>
               </div>
           </div>
