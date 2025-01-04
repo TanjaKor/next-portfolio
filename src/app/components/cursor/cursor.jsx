@@ -1,10 +1,16 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import style from './style.module.scss';
 import {motion, useMotionValue, useSpring } from "framer-motion";
 
 export default function index() {
+    //tarkistetaanko onko kosketusnäyttö
+    const [isTouchDevice, setIsTouchDevice] = useState(false);
+
+    useEffect(() => {
+        setIsTouchDevice('ontouchstart' in window || navigator.maxTouchPoints > 0);
+    }, []);
     //tallennetaan cursorin koko, jotta pisteen sijainti on helpompi määrittää sopivaksi
     const cursorSize = 20;
     //tallennetaan hiiren paikkaa
@@ -28,17 +34,25 @@ export default function index() {
         mouse.y.set(clientY -cursorSize /2 -3);
     }
     //kiinnitetään managemousemove hiiren liikkeisiin
-    useEffect( () => {
-        window.addEventListener("mousemove", manageMouseMove);
-        return () => {
-            window.removeEventListener("mousemove", manageMouseMove)
+    useEffect(() => {
+        if (!isTouchDevice) {
+            window.addEventListener("mousemove", manageMouseMove);
         }
-    }, [])
-    return(
-        <motion.div className={style.cursor}
-        style={{left: smoothMouse.x, top: smoothMouse.y}}
-        >
+        return () => {
+            if (!isTouchDevice) {
+                window.removeEventListener("mousemove", manageMouseMove);
+            }
+        };
+    }, [isTouchDevice]);
 
-        </motion.div>
+    return(
+        <div>
+            {!isTouchDevice && (
+                <motion.div
+                    className={style.cursor}
+                    style={{ left: smoothMouse.x, top: smoothMouse.y }}
+                />
+            )}
+        </div>
     )
 }
