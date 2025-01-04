@@ -3,28 +3,36 @@ import Image from "next/image";
 
 export default function Koti() {
   return (
-    <div id="koti" className="hero-bg text-dark d-flex justify-content-center align-items-center">
+    <div
+      id="koti"
+      className="hero-bg text-dark d-flex justify-content-center align-items-center"
+    >
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-6 col-12">
             <div className="text-center text-md-start ms-md-5 ps-md-5">
-              <h1 className="display-1 fw-bold mb-3 syne-mono-regular">Tanja Korolainen</h1>
+              <h1 className="display-1 fw-bold mb-3 syne-mono-regular">
+                Tanja Korolainen
+              </h1>
               <p className="lead">Ladataan teidän tuoretta devaajaa!</p>
             </div>
-            <div className="mt-8 ms-md-5 ps-md-5">
-            <div
-            className="progress"
-            role="progressbar"
-            aria-valuenow="50"
-            aria-valuemin="0"
-            aria-valuemax="100"
-          >
-            <div className="progress-bar progress-bar-striped progress-bar-animated bg-custom-blue mb-4 mb-md-0" style={{ width: "50%" }}></div>
-          </div>
+            <div className="mt-8 ms-md-5 ps-md-5 mb-4 mb-md-0">
+              <div
+                className="progress"
+                role="progressbar"
+                aria-valuenow="50"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                <div
+                  className="progress-bar progress-bar-striped progress-bar-animated bg-custom-blue"
+                  style={{ width: "50%" }}
+                ></div>
               </div>
+            </div>
           </div>
           <div className="offset-lg-1 col-lg-5 col-12 text-center">
-            <div className="position-relative">
+            <div className="position-relative mb-4 mb-md-0">
               <Image
                 className="rounded-circle mb-5 pb-2"
                 src="/WEB-2.jpg"
