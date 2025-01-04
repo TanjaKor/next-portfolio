@@ -1,6 +1,9 @@
 "use client";
+import { useRef } from "react";
 
 export default function Yhteys() {
+  const formRef = useRef();
+  
   const handleSubmit = async (event) => {
     event.preventDefault();
     const formData = {
@@ -20,7 +23,9 @@ export default function Yhteys() {
     });
 
     const result = await response.json();
-    console.log(result); // Handle response (success or error message)
+    if (response.ok) {
+      formRef.current.reset();
+    }
   };
   return (
     <div id="yhteys" className="mx-5 px-5">
