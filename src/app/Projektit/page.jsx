@@ -21,8 +21,8 @@ export default function Projektit() {
             <div className="card-body">
               <h5 className="card-title">Kuikan Ranch nettisivut</h5>
               <p className="card-text">
-                Kuvitteelliselle matkailuyritykselle tehdyt nettisivut
-                Bootstrapilla, pelkkä frontti.
+                Tämä projekti oli hauska tehdä ja opin perusteita Sassin käytöstä sekä animaatioista. Syvensin osaamistani Bootstrapin käytössä. 
+                Responsiivisuus jäi tässä projektissa hiukan vajaaksi, mutta kaiken kaikkiaan tämä oli hauska värien käytön ja animaatioiden harjoittelun alusta.
               </p>
               <a href="https://ab3775.pages.labranet.jamk.fi/web-visualisaatio/ranch/bootstrap-npm-starter/index.html" className="btn btn-custom-yellow">
                 Käy sivustolla
@@ -44,8 +44,8 @@ export default function Projektit() {
             <div className="card-body">
               <h5 className="card-title">Wordpress sivusto</h5>
               <p className="card-text">
-                Kuvitteelliselle yritykselle tehdyt nettisivut
-                Worpdressillä, sisältäen verkkokaupan jne.
+                Wordpressin customoinnin opettelua ja samalla PHP:n perusteiden opettelua. Visuaalisesti olin tyytyväinen lopputulokseen, 
+                mutta php-koodin oppiminen jäi hiukan laihaksi.
               </p>
               <a href="https://github.com/TanjaKor/JAMK-web-julkaisuj-rjestelm-t" className="btn btn-custom-yellow">
                 Käy kurssin dokumentaatio sivulla
@@ -69,7 +69,8 @@ export default function Projektit() {
             <div className="card-body">
               <h5 className="card-title">Peliohjelmoinnin harjoittelua</h5>
               <p className="card-text">
-                3d-peli, jonka tein osana AMKoodari kursseja vuonna 2020/2021 ennen tutkinto-opintojani.
+                3d-peli, jonka tein osana AMKoodari kursseja vuonna 2020/2021 ennen tutkinto-opintojani. 
+                Tämä oli mielenkiintoinen projekti, opin C#:n perusteita sekä Unityn käytön perusteita. Myös pelisuunnittelun monimuotoisuus paljastui projektin aikana. 
               </p>
               <a href="https://github.com/TanjaKor/XAMK_3d_suunnistuspeli" className="btn btn-custom-yellow">
                 Tutki koodiani
@@ -91,9 +92,10 @@ export default function Projektit() {
             <div className="card-body">
               <h5 className="card-title">Android Jetpack Compose</h5>
               <p className="card-text">
-                Kuvitteelliselle yritykselle tehty android app jetpack composella. 
+                Kuvitteelliselle yritykselle tehty Android sovellus Jetpack Composella. Projekti opetti yhdistämään Android Basics- kurssin pieniä palasia yhteen.
+                Opin myös uutena asiana sisäänkirjautumisen toteuttamisen (ilman backendiä). Visuaalinen puoli jäi mielestäni hiukan torsoksi ja dark-mode-koodin toimimattomuus mysteeriksi.
               </p>
-              <a href="https://gitlab.labranet.jamk.fi/AB3775/android-exercises/-/tree/main/MyCompanyApp?ref_type=heads" className="btn btn-custom-yellow">
+              <a href="https://github.com/TanjaKor/androidBasicsJetpackCompose/tree/main/MyCompanyApp/app/src/main/java/com/example/mycompanyapp" className="btn btn-custom-yellow">
                 Tutki koodiani
               </a>
             </div>
@@ -113,11 +115,11 @@ export default function Projektit() {
             <div className="card-body">
               <h5 className="card-title">Movies sovellus</h5>
               <p className="card-text">
-                Movies-sovellus, jossa listasin apin kautta uusimpia leffoja, apin kautta 
-                löytää leffoista tarkemmat tiedot ja pääsee katsomaan niihin littyviä videoita (kuten trailereita jne)
+                Android Movies- sovellus React Nativella. Projekti opetti API:n käyttöä ja React Nativen tyylimuotoilut tulivat myös tutummaksi.
+                Yllätyin kuinka kiva React Nativella on rakentaa mobiilisovelluksia.                
               </p>
-              <a href="https://gitlab.labranet.jamk.fi/AB3775/mobile-exercises/-/tree/main/Movies2?ref_type=heads" className="btn btn-custom-yellow">
-                Tarkastele koodiani
+              <a href="https://github.com/TanjaKor/ReactNative-Flutter-PWA/tree/main/Movies2" className="btn btn-custom-yellow">
+                Tutki koodiani
               </a>
             </div>
           </div>

@@ -31,13 +31,13 @@ export default function Koti() {
               </div>
             </div>
           </div>
-          <div className="offset-lg-1 col-lg-5 col-12 text-center">
+          <div className="offset-lg-1 col-lg-5 col-12 text-start">
             <div className="position-relative mb-4 mb-md-0">
               <Image
                 className="rounded-circle mb-5 pb-2"
                 src="/WEB-2.jpg"
-                width={250}
-                height={400}
+                width={300}
+                height={300}
                 alt="Profiilikuva"
               />
             </div>

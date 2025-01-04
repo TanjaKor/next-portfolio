@@ -10,7 +10,7 @@ export default function Navigation() {
 
   return (
     <div className="">
-      <nav className="navbar navbar-light  fixed-top">
+      <nav className="navbar navbar-light fixed-top">
         <div className="container-fluid">
           <button
             className="navbar-toggler ms-auto"
@@ -35,7 +35,7 @@ export default function Navigation() {
                 aria-label="Close"
               ></button>
             </div>
-            <div className="offcanvas-body">
+            <div className="offcanvas-body fs-2 text-center syne-mono-regular">
               <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li className="nav-item">
                   <a className="nav-link" aria-current="page" href="#koti">

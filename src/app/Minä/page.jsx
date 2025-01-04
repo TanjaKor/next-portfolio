@@ -7,27 +7,26 @@ export default function Minä() {
       <section className="d-flex justify-content-start m-md-5 p-5">
         <div className="col-md-6 my-5">
           <h1> Ei hätää, mä kerron.</h1>
-          <p>
-            Olen kahtaa (eli opinnäytetyö ja harjoittelu) vaille ICT-insinööri,
-            jonka intohimona on oppia uutta ja tulla paremmaksi. Sen mihin
-            lähden, teen täysillä, opin virheistäni ja kokeilen uutta. Tämä
-            näkyy portfoliossani siinä, että olen kokeillut monenlaista, niin
-            peliohjelmointia kuin tekoälynkin perusteita. Harrastan käsitöitä ja
-            koiraurheilua, sekä lukemista ja liikuntaa kun niihin resursseja
-            riittää. Pidän huolta omasta hyvinvoinnistani enkä siksi istu
-            koneella 24/7, vaikka intohimonani onkin tulla huippuosaajaksi
-            uudella alallani, tai oikeastaan ehkä juuri siksi pidänkin huolta
-            hyvinvoinnistani. Parhaaksi voi tulla vain, jos pitää aivo- ja
-            muutkin solut hereillä ja terveenä.
+          <p className="fs-5">
+            Olen kahta (eli opinnäytetyö ja harjoittelu) vaille ICT-insinööri,
+            joka etsii hedelmällisen maaperän tarjoavaa yritystä, johon juurtua
+            ja jossa kasvaa. Alanvaihtajana omaan monipuolisen kokemuksen ja
+            laajakuvalinssin, jolla tutkailla alaa. Sytyn uusista haasteista ja ongelmanratkaisusta, 
+            oli sitten kyseessä pakohuonepeli, AOC-haaste tai uuden frameworkin opettelu. Onneksi haasteet eivät lopu tällä alalla. 
+            Intohimonani on kehittää jatkuvasti
+            itsestäni parempi variantti ja tämä näkyy portfoliossani
+            monipuolisten taitojen opiskeluna, aina peliohjelmoinnista webkehitykseen. Joukkueurheilutaustan ansiosta olen erinomainen
+            tiimipelaaja ja sulaudun helposti uuteen työyhteisöön. Harrastan
+            resurssien mukaan käsitöitä, koiraurheilua ja lukemista.
           </p>
         </div>
       </section>
       <div className="row m-5 pb-5">
-       {/*kokeile saako grid+gap muotoiltua ikonit*/}
-      <h2 className="mb-5"> Ohjelmointitaidot </h2>
+        {/*kokeile saako grid+gap muotoiltua ikonit*/}
+        <h1 className="mb-5"> Ohjelmointitaidot </h1>
         {/*osaan käyttää, peruskäyttö*/}
         <section className="col-md-4 mt-3 mb-5">
-        <h4>Peruskäyttö sujuu itsenäisesti</h4>
+          <h4>Peruskäyttö sujuu itsenäisesti</h4>
           <div
             className="progress"
             role="progressbar"
@@ -36,12 +35,13 @@ export default function Minä() {
             aria-valuemin="0"
             aria-valuemax="100"
           >
-            <div className="progress-bar bg-custom-yellow" style={{ width: "50%" }}></div>
+            <div
+              className="progress-bar bg-custom-yellow"
+              style={{ width: "50%" }}
+            ></div>
           </div>
           <p className="d-flex flex-wrap justify-content-center fs-1 ">
             <i className="devicon-bootstrap-plain colored m-2"> </i>
-
-            <i className="devicon-react-original colored m-2"> </i>
 
             <i className="devicon-html5-plain colored m-2"></i>
 
@@ -66,7 +66,7 @@ export default function Minä() {
         </section>
         {/*kertauksen tai dokumentaation tutkimisen jälkeen osaan käyttää*/}
         <section className="col-md-4 my-3 mb-5">
-        <h4>Vaatii kertausta/ dokumentaatiota peruskäytössä </h4>
+          <h4>Vaatii kertausta/ dokumentaatiota peruskäytössä </h4>
           <div
             className="progress"
             role="progressbar"
@@ -75,21 +75,24 @@ export default function Minä() {
             aria-valuemin="0"
             aria-valuemax="100"
           >
-            <div className="progress-bar bg-custom-yellow" style={{ width: "20%" }}></div>
+            <div
+              className="progress-bar bg-custom-yellow"
+              style={{ width: "20%" }}
+            ></div>
           </div>
           <p className="d-flex flex-wrap justify-content-center fs-1">
-          
-          <i className="devicon-express-original m-2"></i>
-          
+            <i className="devicon-express-original m-2"></i>
+
             <i className="devicon-nextjs-line-wordmark m-2"></i>
             <i className="devicon-kotlin-plain colored m-2"></i>
             <i className="devicon-azuresqldatabase-plain m-2"></i>
             <i className="devicon-firebase-plain-wordmark m-2"></i>
+            <i className="devicon-react-original colored m-2"> </i>
           </p>
         </section>
         {/*alkeet, eli olen testannut pari kertaa / opetellut kauan aikaa sitten*/}
         <section className="col-md-4 my-3 mb-5">
-        <h4>Alkeet</h4>
+          <h4>Alkeet</h4>
           <div
             className="progress"
             role="progressbar"
@@ -98,7 +101,10 @@ export default function Minä() {
             aria-valuemin="0"
             aria-valuemax="100"
           >
-            <div className="progress-bar bg-custom-yellow" style={{ width: "10%" }}></div>
+            <div
+              className="progress-bar bg-custom-yellow"
+              style={{ width: "10%" }}
+            ></div>
           </div>
           <p className="d-flex flex-wrap justify-content-center fs-1">
             <i className="devicon-flutter-plain colored m-2"></i>
@@ -110,9 +116,8 @@ export default function Minä() {
             <i className="devicon-cplusplus-plain colored m-2"></i>
 
             <i className="devicon-java-plain colored m-2"></i>
-            
+
             <i className="devicon-sass-original m-2"></i>
-          
           </p>
         </section>
       </div>
