@@ -6,7 +6,7 @@ export default function Yhteys() {
   useEffect(() => {
     import("bootstrap/dist/js/bootstrap.bundle.min.js");
   }, []);
-  
+
   const[nimi,setNimi]=useState("")
   const[puhelin,setPuhelin]=useState("")
   const[sposti,setEmail]=useState("")
@@ -65,7 +65,7 @@ export default function Yhteys() {
   )}
 
   return (
-    <div id="yhteys" className="mx-5 px-5">
+    <div id="yhteys" className="mx-md-5 px-5">
       <h1 className="display-2">Ota yhteyttä</h1>
       <p>Kilauta tai laita sähköpostia, jos kiinnostuit</p>
       <p>
@@ -76,7 +76,7 @@ export default function Yhteys() {
         </a>
       </p>
       <form onSubmit={handleSubmit} className="mb-5">
-        <div className="row mx-5 mt-5 mb-4">
+        <div className="row mx-md-5 mt-5 mb-4">
           <div className="col-md-4">
             <label htmlFor="nimi">Nimesi</label>
             <input
@@ -108,7 +108,7 @@ export default function Yhteys() {
             />
           </div>
         </div>
-        <div className="row mx-5 mt-4 mb-4">
+        <div className="row mx-md-5 mt-4 mb-4">
           <div className="col-md-4">
             <label htmlFor="puhelin">Puhelinnumero</label>
             <input

@@ -7,11 +7,11 @@ export default function Koti() {
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-6 col-12">
-            <div className="text-center text-md-start ms-5 ps-5">
+            <div className="text-center text-md-start ms-md-5 ps-md-5">
               <h1 className="display-1 fw-bold mb-3 syne-mono-regular">Tanja Korolainen</h1>
               <p className="lead">Ladataan teidän tuoretta devaajaa!</p>
             </div>
-            <div className="mt-8 ms-5 ps-5">
+            <div className="mt-8 ms-md-5 ps-md-5">
             <div
             className="progress"
             role="progressbar"

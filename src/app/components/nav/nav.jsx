@@ -38,7 +38,7 @@ export default function Navigation() {
             <div className="offcanvas-body">
               <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="#koti">
+                  <a className="nav-link" aria-current="page" href="#koti">
                     Koti
                   </a>
                 </li>
