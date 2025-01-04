@@ -5,7 +5,7 @@ export async function POST(request) {
 
   if (!nimi || !viesti) {
     return new Response(
-      JSON.stringify({ error: 'Nimi ja viesti vaaditaan.' }),
+      JSON.stringify({ error: 'Nimi ja viesti are required.' }),
       { status: 400 }
     );
   }

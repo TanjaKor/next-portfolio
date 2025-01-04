@@ -1,17 +1,23 @@
 "use client";
-import { useRef } from "react";
+import { useState } from "react";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 export default function Yhteys() {
-  const formRef = useRef();
-  
+  const[nimi,setNimi]=useState("")
+  const[puhelin,setPuhelin]=useState("")
+  const[sposti,setEmail]=useState("")
+  const[viesti,setViesti]=useState("")
+  const[yritys,setYritys]=useState("")
+  const [showModal, setShowModal] = useState(false);
+
   const handleSubmit = async (event) => {
     event.preventDefault();
     const formData = {
-      nimi: event.target.nimi.value,
-      viesti: event.target.viesti.value,
-      sposti: event.target.sposti.value,
-      puhelin: event.target.puhelin.value,
-      yritys: event.target.yritys.value,
+      nimi,
+      viesti,
+      sposti,
+      puhelin,
+      yritys,
     };
 
     const response = await fetch('/api/hello', {
@@ -20,13 +26,40 @@ export default function Yhteys() {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify(formData),
+    }).then(() => {
+      setNimi('')
+      setPuhelin('')
+      setEmail('')
+      setViesti('')
+      setYritys('')
+      setShowModal(true)
     });
-
-    const result = await response.json();
-    if (response.ok) {
-      formRef.current.reset();
-    }
   };
+
+  const closeModal = () => {
+    setShowModal(false); 
+  };
+
+  const Modal = () => {
+  return(
+  <div className="modal fade show" id="modal" tabIndex="-1" aria-labelledby="modalLabel" aria-hidden="true" style={{ display: "block" }}>
+    <div className="modal-dialog">
+      <div className="modal-content">
+        <div className="modal-header">
+          <h1 className="modal-title fs-5 text-black" id="exampleModalLabel">HURAA</h1>
+          <button type="button" className="btn-close" onClick={closeModal} aria-label="Close"></button>
+        </div>
+        <div className="modal-body text-custom-blue">
+          Viesti tuli perille, otan sinuun yhteyttä parin päivän sisään.
+        </div>
+        <div className="modal-footer">
+          <button type="button" className="btn btn-secondary" onClick={closeModal}>Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  )}
+
   return (
     <div id="yhteys" className="mx-5 px-5">
       <h1 className="display-2">Ota yhteyttä</h1>
@@ -45,8 +78,9 @@ export default function Yhteys() {
             <input
               type="text"
               className="form-control"
-              name="nimi"
+              onChange={(e)=>{setNimi(e.target.value)}}
               placeholder="Kirjoita nimesi"
+              value={nimi}
             />
           </div>
           <div className="col-md-4">
@@ -54,17 +88,19 @@ export default function Yhteys() {
             <input
               type="text"
               className="form-control"
-              name="yritys"
+              onChange={(e)=>{setYritys(e.target.value)}}
               placeholder="Yrityksesi"
+              value={yritys}
             />
           </div>
           <div className="col-md-4">
-            <label htmlFor="sposti">Sposti</label>
+            <label htmlFor="email">Sposti</label>
             <input
               type="text"
               className="form-control"
-              name="sposti"
+              onChange={(e)=>{setEmail(e.target.value)}}
               placeholder="Sposti"
+              value={sposti}
             />
           </div>
         </div>
@@ -74,8 +110,9 @@ export default function Yhteys() {
             <input
               type="text"
               className="form-control"
-              name="puhelin"
+              onChange={(e)=>{setPuhelin(e.target.value)}}
               placeholder="Kirjoita puhelinnumerosi"
+              value={puhelin}
             />
           </div>
           <div className="col-md-8">
@@ -83,17 +120,18 @@ export default function Yhteys() {
             <textarea
               type="text"
               className="form-control"
-              name="viesti"
+              onChange={(e)=>{setViesti(e.target.value)}}
               placeholder="viesti"
+              value={viesti}
             />
           </div>
         </div>
-        
-
         <button type="submit" className="btn btn-custom-yellow btn-large">
           Submit
         </button>
       </form>
+      {showModal && <Modal />}
     </div>
   );
 }
+
