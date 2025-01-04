@@ -1,10 +1,13 @@
 "use client";
 
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
-
+import { useEffect } from "react";
 
 export default function Navigation() {
-  
+  //useEffectin kautta js import, jotta next toimii oikein
+  useEffect(() => {
+    import("bootstrap/dist/js/bootstrap.bundle.min.js");
+  }, []);
+
   return (
     <div className="">
       <nav className="navbar navbar-light  fixed-top">

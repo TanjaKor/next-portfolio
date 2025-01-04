@@ -1,16 +1,11 @@
-"use client"
-
-import Koti from "./components/Koti/page";
+import Koti from "./Koti/page";
 import Navigaatio from "./components/nav/nav";
-import Projektit from "./components/Projektit/page";
-import Minä from "./components/Minä/page";
-import Yhteys from "./components/Yhteys/page";
-import Cursor from "./components/cursor";
-
-
+import Projektit from "./Projektit/page";
+import Minä from "./Minä/page";
+import Yhteys from "./Yhteys/page";
+import Cursor from "./components/cursor/cursor";
 
 export default function Home() {
-  
   
   return (
     <div className="items-center justify-items-center ">

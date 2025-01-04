@@ -44,7 +44,7 @@ export default function Yhteys() {
         </div>
         <div className="row mx-5 mt-4 mb-4">
           <div className="col-md-4">
-            <label htmlForr="puhelin">Puhelinnumero</label>
+            <label htmlFor="puhelin">Puhelinnumero</label>
             <input
               type="text"
               className="form-control"
