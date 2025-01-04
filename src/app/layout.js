@@ -13,9 +13,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="bg-custom-blue text-light yanone-kaffeesatz-yanone"
       >
-      
-      <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-          
+      <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />  
         {children}
       </body>
     </html>

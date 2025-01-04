@@ -1,11 +1,16 @@
-import Image from "next/image";
+"use client"
+
 import Koti from "./components/Koti/page";
 import Navigaatio from "./components/nav/nav";
 import Projektit from "./components/Projektit/page";
 import Minä from "./components/Minä/page";
 import Yhteys from "./components/Yhteys/page";
+import Cursor from "./components/cursor";
+
+
 
 export default function Home() {
+  
   
   return (
     <div className="items-center justify-items-center ">
@@ -17,6 +22,7 @@ export default function Home() {
         <Projektit/>
         <Minä/>
         <Yhteys/>
+        <Cursor/>
       </main>
       
       <footer className="flex flex-row text-center items-center sm:items-start">
