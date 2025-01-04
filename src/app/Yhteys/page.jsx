@@ -1,8 +1,12 @@
 "use client";
-import { useState } from "react";
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import { useState, useEffect } from "react";
 
 export default function Yhteys() {
+  //useEffectin kautta js import, jotta next toimii oikein
+  useEffect(() => {
+    import("bootstrap/dist/js/bootstrap.bundle.min.js");
+  }, []);
+  
   const[nimi,setNimi]=useState("")
   const[puhelin,setPuhelin]=useState("")
   const[sposti,setEmail]=useState("")
