@@ -11,7 +11,7 @@ export default function Yhteys() {
       yritys: event.target.yritys.value,
     };
 
-    const response = await fetch('/api/contact', {
+    const response = await fetch('/api/hello', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
