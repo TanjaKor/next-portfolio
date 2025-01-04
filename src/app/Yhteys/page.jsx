@@ -54,7 +54,7 @@ export default function Yhteys() {
           <button type="button" className="btn-close" onClick={closeModal} aria-label="Close"></button>
         </div>
         <div className="modal-body text-custom-blue">
-          Viesti tuli perille, otan sinuun yhteyttä parin päivän sisään.
+          Viesti tuli perille, otan sinuun yhteyttä parin päivän sisään, muistithan jättää yhteystietosi!
         </div>
         <div className="modal-footer">
           <button type="button" className="btn btn-secondary" onClick={closeModal}>Close</button>
@@ -78,13 +78,14 @@ export default function Yhteys() {
       <form onSubmit={handleSubmit} className="mb-5">
         <div className="row mx-md-5 mt-5 mb-4">
           <div className="col-md-4">
-            <label htmlFor="nimi">Nimesi</label>
+            <label htmlFor="nimi">Nimi</label>
             <input
               type="text"
               className="form-control"
               onChange={(e)=>{setNimi(e.target.value)}}
-              placeholder="Kirjoita nimesi"
+              placeholder="Eeva Esimerkki"
               value={nimi}
+              required
             />
           </div>
           <div className="col-md-4">
@@ -93,17 +94,17 @@ export default function Yhteys() {
               type="text"
               className="form-control"
               onChange={(e)=>{setYritys(e.target.value)}}
-              placeholder="Yrityksesi"
+              placeholder="Firma Ab Oy"
               value={yritys}
             />
           </div>
           <div className="col-md-4">
-            <label htmlFor="email">Sposti</label>
+            <label htmlFor="email">Sähköposti</label>
             <input
               type="text"
               className="form-control"
               onChange={(e)=>{setEmail(e.target.value)}}
-              placeholder="Sposti"
+              placeholder="email@email.com"
               value={sposti}
             />
           </div>
@@ -115,7 +116,7 @@ export default function Yhteys() {
               type="text"
               className="form-control"
               onChange={(e)=>{setPuhelin(e.target.value)}}
-              placeholder="Kirjoita puhelinnumerosi"
+              placeholder="0401234567"
               value={puhelin}
             />
           </div>
@@ -125,13 +126,14 @@ export default function Yhteys() {
               type="text"
               className="form-control"
               onChange={(e)=>{setViesti(e.target.value)}}
-              placeholder="viesti"
+              placeholder="Terveisesi minulle"
               value={viesti}
+              required
             />
           </div>
         </div>
         <button type="submit" className="btn btn-custom-yellow btn-large">
-          Submit
+          Lähetä
         </button>
       </form>
       {showModal && <Modal />}
