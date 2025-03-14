@@ -15,9 +15,8 @@ export default function Minä() {
             oli sitten kyseessä pakohuonepeli, AOC-haaste tai uuden frameworkin opettelu. Onneksi haasteet eivät lopu tällä alalla. 
             Intohimonani on kehittää jatkuvasti
             itsestäni parempi variantti ja tämä näkyy portfoliossani
-            monipuolisten taitojen opiskeluna, aina peliohjelmoinnista webkehitykseen. Joukkueurheilutaustan ansiosta olen erinomainen
-            tiimipelaaja ja sulaudun helposti uuteen työyhteisöön. Harrastan
-            resurssien mukaan käsitöitä, koiraurheilua ja lukemista.
+            monipuolisten taitojen opiskeluna, aina peliohjelmoinnista webkehitykseen. Olen tottunut pelaamaan erilaisissa tiimeissä, 
+            olenkin erinomainen joukkuepelaaja ja sulaudun helposti uuteen työyhteisöön.
           </p>
         </div>
       </section>
@@ -26,7 +25,7 @@ export default function Minä() {
         <h1 className="mb-5"> Ohjelmointitaidot </h1>
         {/*osaan käyttää, peruskäyttö*/}
         <section className="col-md-4 mt-3 mb-5">
-          <h4>Peruskäyttö sujuu itsenäisesti</h4>
+          <h4>Sujuu itsenäisesti</h4>
           <div
             className="progress"
             role="progressbar"
@@ -42,6 +41,8 @@ export default function Minä() {
           </div>
           <p className="d-flex flex-wrap justify-content-center fs-1 ">
             <i className="devicon-bootstrap-plain colored m-2"> </i>
+
+            <i className="devicon-figma-plain m-2"></i>
 
             <i className="devicon-html5-plain colored m-2"></i>
 
@@ -62,11 +63,12 @@ export default function Minä() {
             <i className="devicon-github-original-wordmark m-2"></i>
 
             <i className="devicon-gitlab-plain-wordmark m-2"></i>
+            
           </p>
         </section>
         {/*kertauksen tai dokumentaation tutkimisen jälkeen osaan käyttää*/}
         <section className="col-md-4 my-3 mb-5">
-          <h4>Vaatii kertausta/ dokumentaatiota peruskäytössä </h4>
+          <h4>Peruskäyttö onnistuu itsenäisesti dokumentaation avulla</h4>
           <div
             className="progress"
             role="progressbar"
@@ -82,7 +84,6 @@ export default function Minä() {
           </div>
           <p className="d-flex flex-wrap justify-content-center fs-1">
             <i className="devicon-express-original m-2"></i>
-
             <i className="devicon-nextjs-line-wordmark m-2"></i>
             <i className="devicon-kotlin-plain colored m-2"></i>
             <i className="devicon-azuresqldatabase-plain m-2"></i>
@@ -92,7 +93,7 @@ export default function Minä() {
         </section>
         {/*alkeet, eli olen testannut pari kertaa / opetellut kauan aikaa sitten*/}
         <section className="col-md-4 my-3 mb-5">
-          <h4>Alkeet</h4>
+          <h4>Perusteet</h4>
           <div
             className="progress"
             role="progressbar"
