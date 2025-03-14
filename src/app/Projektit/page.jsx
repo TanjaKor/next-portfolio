@@ -35,20 +35,21 @@ export default function Projektit() {
             className="card shadow mt-5 mb-1 mx-md-4" >
             <Image
               className="card-img-top"
-              src="/chrome.png"
+              src="/cryometer.png"
               width = {500}
             height= {300} 
               alt="kuva projektista"
               style={{ objectFit: "cover" }}
             />
             <div className="card-body">
-              <h5 className="card-title">Wordpress sivusto</h5>
+              <h5 className="card-title">Cryo-Meter</h5>
               <p className="card-text">
-                Wordpressin customoinnin opettelua ja samalla PHP:n perusteiden opettelua. Visuaalisesti olin tyytyväinen lopputulokseen, 
-                mutta php-koodin oppiminen jäi hiukan laihaksi.
+                Jetpack Composen ja Android-mobiilikehittämisen harjoittelua. Vielä keskeneräinen projekti, 
+                jota työstän opinnäytetyön ohella. Sovellus laskee ajan kuinka kauan lapsi itkee, laskee itkun 
+                keskiarvoisen pituuden ja itkukerrat vuorokaudessa.
               </p>
-              <a href="https://github.com/TanjaKor/JAMK-web-julkaisuj-rjestelm-t" className="btn btn-custom-yellow">
-                Käy kurssin dokumentaatio sivulla
+              <a href="https://github.com/TanjaKor/cryometer?tab=readme-ov-file" className="btn btn-custom-yellow">
+                Tutustu koodiin
               </a>
             </div>
           </div>
